@@ -2,7 +2,7 @@ package singleton;
 
 public class TestSingletonPessoa {
     public static void main(String[] args) {
-        Pessoa p1 = Pessoa.getInstance();
+        PessoaSingletonLegacy p1 = PessoaSingletonLegacy.getInstance();
         p1.nome = "João Arthur";
         System.out.println("Usando p1:");
         System.out.println(" - Nome: "+p1.nome +"|| Email: "+ p1.email+"\n");
@@ -10,7 +10,7 @@ public class TestSingletonPessoa {
         // --------
         // Nova Pessoa
 
-        Pessoa p2 = Pessoa.getInstance();
+        PessoaSingletonLegacy p2 = PessoaSingletonLegacy.getInstance();
         p2.email = "joao@gmail.com";
         System.out.println("Usando p2:");
         System.out.println(" - Nome: "+p2.nome +"|| Email: "+ p2.email+"\n");
